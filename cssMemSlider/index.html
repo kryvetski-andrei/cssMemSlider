@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>CSS MEM SLIDER</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider__wrapper">
+        <input type="radio" name="radio-slide" id="first" checked />
+        <input type="radio" name="radio-slide" id="second" />
+        <input type="radio" name="radio-slide" id="third" />
+        <input type="radio" name="radio-slide" id="fourth" />
+
+        <div class="slider">
+          <div class="slide move">
+            <img src="./assets/images/11.jpg" alt="memas1" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/2.PNG" alt="memas2" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/1.PNG" alt="memas" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/2.PNG" alt="memas2" />
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="text-slider__wrapper">
+            <div class="text-slider">
+              <div class="text move">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+              <div class="text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto, voluptas.
+              </div>
+              <div class="text">Lorem ipsum dolor sit.</div>
+              <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
+
+          <div class="nav">
+            <label for="first" class="bullet">
+              <div class="bullet-inner bullet-inner--active1"></div>
+            </label>
+            <label for="second" class="bullet">
+              <div class="bullet-inner bullet-inner--active2"></div>
+            </label>
+            <label for="third" class="bullet">
+              <div class="bullet-inner bullet-inner--active3"></div>
+            </label>
+            <label for="fourth" class="bullet">
+              <div class="bullet-inner bullet-inner--active4"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
