@@ -35,6 +35,8 @@
 .slide {
   width: 25%;
   transition: all .5s ease;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .slide img {
