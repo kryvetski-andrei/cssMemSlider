@@ -8,27 +8,47 @@
   <title>CSS MEM SLIDER</title>
 </head>
 <body>
-  <div class="slider__wrapper">
-    <div class="slider">
+  <div class="container">
+    <div class="slider__wrapper">
 
       <input type="radio" name="radio-slide" id="first" checked>
       <input type="radio" name="radio-slide" id="second">
       <input type="radio" name="radio-slide" id="third">
       <input type="radio" name="radio-slide" id="fourth">
+      
+      <div class="slider">
 
-      <div class="slide s1"><img src="./assets/images/1.PNG" alt="memas1"></div>
-      <div class="slide"><img src="./assets/images/2.PNG" alt="memas2"></div>
-      <div class="slide"><img src="./assets/images/1.PNG" alt="memas"></div>
-      <div class="slide"><img src="./assets/images/2.PNG" alt="memas2"></div>
+        <div class="slide move">
+          <img src="./assets/images/1.PNG" alt="memas1">
+        </div>
+        <div class="slide">
+          <img src="./assets/images/2.PNG" alt="memas2">
+        </div>
+        <div class="slide">
+          <img src="./assets/images/1.PNG" alt="memas">
+        </div>
+        <div class="slide">
+          <img src="./assets/images/2.PNG" alt="memas2">
+        </div>
+  
+      </div>
+  
+      <div class="nav">
+        <label for="first" class="bullet"></label>
+        <label for="second" class="bullet"></label>
+        <label for="third" class="bullet"></label>
+        <label for="fourth" class="bullet"></label>
+      </div>
+      
+      <div class="text-slider">
+        <div class="text move">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+      </div>
 
-    </div>
-
-    <div class="nav">
-      <label for="first"  class="bullet"></label>
-      <label for="second" class="bullet"></label>
-      <label for="third"  class="bullet"></label>
-      <label for="fourth" class="bullet"></label>
     </div>
   </div>
+    
 </body>
 </html>
