@@ -5,8 +5,8 @@
 }
 
 .container {
-  padding: 20px;
-  max-width: 840px;
+  padding: 1rem;
+  max-width: 35rem;
   width: 100%;
   margin: 0 auto; 
 }
@@ -18,13 +18,18 @@
   overflow: hidden;
 }
 
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
 /* ------------------------------------ */
 
 .slider {
   width: 400%;
   height: 100%;
   display: flex;
-  padding: 20px 0;
+  padding: 1rem 0;
 }
 
 .slide {
@@ -47,14 +52,14 @@ input[name="radio-slide"] {
 /* ------------------------------------ */
 
 .nav {
-  height: 50px;
+  height: 3rem;
   display: flex;
-  /* background-color: green; */
+  background-color: white;
 }
 
 .bullet {
-  width: 20px;
-  height: 20px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   background-color: red;
   cursor: pointer;
@@ -63,16 +68,15 @@ input[name="radio-slide"] {
 .text-slider {
   width: 400%;
   display: flex;
-  justify-self: start;
-  grid-area: text;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 .text {
   font-family: 'Roboto';
   font-style: normal;
   font-size: 1rem;
   width: 25%;
-  padding: 0rem;
-  transition: all 0.4s ease-in-out;
+  transition: all .5s ease;
 }
 
 /* ------------------------------------ */
@@ -82,14 +86,14 @@ input[name="radio-slide"] {
   margin-left: 0rem;
 }
 #second:checked ~ .slider .move,
-#second:checked ~ .text-slider .move {
+#second:checked ~ .wrapper .text-slider .move {
   margin-left: -25%;
 }
 #third:checked ~ .slider .move,
-#third:checked ~ .text-slider .move {
+#third:checked ~ .wrapper .text-slider .move {
   margin-left: -50%;
 }
 #fourth:checked ~ .slider .move,
-#fourth:checked ~ .text-slider .move {
+#fourth:checked ~ .wrapper .text-slider .move {
   margin-left: -75%;
 }
