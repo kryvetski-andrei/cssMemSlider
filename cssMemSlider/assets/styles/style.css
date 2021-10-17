@@ -6,7 +6,7 @@
 
 .container {
   padding: 1rem;
-  max-width: 35rem;
+  max-width: 40rem;
   width: 100%;
   margin: 0 auto; 
 }
@@ -96,4 +96,17 @@ input[name="radio-slide"] {
 #fourth:checked ~ .slider .move,
 #fourth:checked ~ .wrapper .text-slider .move {
   margin-left: -75%;
+}
+
+
+@media screen and (max-width: 560px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    order: -1;
+  }
 }
